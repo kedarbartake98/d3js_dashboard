@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://bl.ocks.org/syntagmatic/raw/3341641/render-queue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+    <script src="https://d3js.org/d3.v4.js" charset="utf-8"></script>
+    <title>Housing Data Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <div class="row" style="height: 50px; background: cyan; text-align: center;">
+            <div class="col-lg-4"> </div>
+            <div class="col-lg-4"> <h2 style="text-align: center;">Housing Data Analytics</h2></div>
+            <div class="col-lg-4"> </div>
+           
+        </div>
+
+        <div class="row" style="height:475px;">
+            
+            <div class="col-lg-8" id="parcorcont">
+                <!-- <svg width="100%" height="100%" id="Parcor"></svg> -->
+            </div>
+            
+            <div class="col-lg-4 ">
+                <svg width="100%" height="100%" id="QualvsCond"></svg>
+            </div>
+        </div>
+
+        <div class="row" style="height: 410px">
+            
+            <div class="col-lg-4">
+                <svg width="100%" height="100%" id="PCA"></svg>
+            </div>
+
+            <div class="col-lg-4">
+                <svg width="100%" height="100%" id="HouseStyle"></svg>
+            </div>
+
+            <div class="col-lg-4">
+                <svg width="100%" height="100%" id="Dummy"></svg>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<!-- <script src="{{url_for('static', filename='scripts/main.js')}}"></script>
+<script src="https://d3js.org/d3.v4.min.js" charset="utf-8"></script> -->
+</html>
